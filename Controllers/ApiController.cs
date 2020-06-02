@@ -25,7 +25,8 @@ namespace api.Controllers
         public ActionResult<IEnumerable<ApiModel>> GetAllData()
         {
             var data = _repo.getApiName();
-            var d = _mapper.Map<ApiDto>(data);
+            // getting error in AutoMapper  need to solve it
+            // var d = _mapper.Map<ApiDto>(data);
             
             return Ok(data);
         }
