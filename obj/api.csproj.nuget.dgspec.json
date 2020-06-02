@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\api\\api.csproj": {}
+    "D:\\dotnetcore\\api.csproj": {}
   },
   "projects": {
-    "D:\\projects\\api\\api.csproj": {
+    "D:\\dotnetcore\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\api\\api.csproj",
-        "projectName": "api",
-        "projectPath": "D:\\projects\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\Arunj\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\api\\obj\\",
+        "projectUniqueName": "D:\\dotnetcore\\api.csproj",
+        "projectName": "s",
+        "projectPath": "D:\\dotnetcore\\api.csproj",
+        "packagesPath": "C:\\Users\\arun.joshi\\.nuget\\packages\\",
+        "outputPath": "D:\\dotnetcore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Arunj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\arun.joshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,9 +38,13 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0-preview.4.20220.10, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -48,9 +52,9 @@
               "target": "Package",
               "version": "[3.1.4, )"
             },
-            "MongoDB.Driver.Core": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[3.1.4, )"
             }
           },
           "imports": [
@@ -63,12 +67,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -77,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
